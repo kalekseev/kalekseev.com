@@ -1,12 +1,41 @@
 <html>
   <head>
     <title>Konstantin Alekseev</title>
+    <meta name="viewport" content="width=device-width">
     <style>
-      .center-text {
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+          Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #484848;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .content {
         text-align: center;
       }
-      body {
-        color: rgb(40, 40, 40);
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      @media (min-width: 768px) {
+        body {
+          font-size: 16px;
+        }
       }
     </style>
   </head>
@@ -19,47 +48,26 @@
         height: 100%;
       "
     >
-      <div class="center-text">
+      <div class="content">
         <div>
-          <img style="border-radius: 50%" height="128" src="img/photo.jpeg" />
+          <img style="border-radius: 50%" height="128px" src="img/photo.jpeg" />
         </div>
         <div style="margin-top: 10px">
-          Konstantin Alekseev
-          <br>
-          Software engineer, founder and CTO in
+          <h1>Konstantin Alekseev</h1>
+          <div>
+          Software engineer, founder and CTO at
           <a href="https://kotify.com">Kotify</a>.
+          </div>
         </div>
-        <div style="margin-top: 8px">
-          <a href="https://twitter.com/kvalekseev" style="margin-right: 8px">
-            <svg
-              version="1.1"
-              id="Capa_1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 512 512"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-              width="20px"
-              height="20px"
-              fill="gray"
-            >
-              <g>
-                <g>
-                  <path
-                    d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-			C480.224,136.96,497.728,118.496,512,97.248z"
-                  />
-                </g>
-              </g></svg></a
-          ><a href="mailto:mail@kalekseev.com"
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            max-width: 100px;
+            margin: 8px auto 0;
+          "
+        >
+          <a href="mailto:mail@kalekseev.com"
             ><svg
               version="1.1"
               id="Capa_1"
@@ -90,6 +98,50 @@
                 </g>
               </g></svg
           ></a>
+          <a href="https://twitter.com/kvalekseev">
+            <svg
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 512 512"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              width="20px"
+              height="20px"
+              fill="gray"
+            >
+              <g>
+                <g>
+                  <path
+                    d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"
+                  />
+                </g>
+              </g></svg
+          ></a>
+          <a href="https://github.com/kalekseev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="20"
+              viewBox="0 0 24 24"
+              width="20"
+            >
+              <path
+                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z"
+                fill="gray"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
